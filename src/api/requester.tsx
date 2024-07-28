@@ -8,3 +8,5 @@ export const requester = axios.create({
     'Content-Type': 'application/json',
   },
 });
+
+export const createPersonJob = (data: any) => requester.post('/persons', data);
